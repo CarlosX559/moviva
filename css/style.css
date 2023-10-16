@@ -507,19 +507,79 @@ a {
 
 /*Plataforma*/
 
+#container_plataforma {
+    background-image: url(../img/bg_plataforma.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.container_plataforma {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 60px 0px 60px 0px;
+}
+
+.container_plataforma_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.area_plataforma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    max-width: 670px;
+    width: 100%;
+}
+
+.area_plataforma img {
+    max-width: max-content;
+    width: 100%;
+}
+
+.title_plataforma h2 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 130%;
+}
 
 
+.sub_title_plataforma p {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 125%;
+}
 
+.btn_plataforma {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    background: #04ADBF;
+    width: 100%;
+    max-width: 170px;
+    padding: 13px 15px 13px 15px;
+}
 
-
-
-
-
-
-
-
-
-
+.btn_plataforma h2 {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin-top: 4px;
+}
 
 
 
