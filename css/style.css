@@ -34,7 +34,7 @@ a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 99;
+    z-index: 0;
 }
 
 .area_whatsapp img {
@@ -1086,7 +1086,7 @@ nav ul li a {
 
     /*Nosso modelo*/
     .container_nosso_modelo {
-        padding: 0px 0px 40px 0px;
+        padding: 20px 0px 40px 0px;
     }
 
     .area_proposta {
