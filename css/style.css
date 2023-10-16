@@ -25,6 +25,20 @@ a {
     max-width: max-content;
 }
 
+.area_whatsapp {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+}
+
+.area_whatsapp img {
+    width: 100%;
+    max-width: 68px;
+    height: 68px;
+}
+
 /*Home*/
 .container_home {
     display: flex;
@@ -978,5 +992,11 @@ a {
 
     .area_cards_swiper {
         height: 240px;
+    }
+
+    .area_whatsapp img {
+        width: 100%;
+        max-width: 60px;
+        height: 60px;
     }
 }
