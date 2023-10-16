@@ -5,7 +5,6 @@
 }
 
 :root {
-    --font-size-home: 48px;
     --font-size-title: 40px;
     --font-size-sub-title: 16px;
 }
@@ -60,7 +59,7 @@ a {
 
 .title_home h2 {
     color: #2E3033;
-    font-size: var(--font-size-home);
+    font-size: 48px;
     font-weight: 700;
     line-height: 132%;
     letter-spacing: -1.92px;
@@ -137,6 +136,16 @@ a {
 }
 
 
+.modelo_tradicional_2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    border: 1px solid #FFF;
+    background: linear-gradient(to bottom right, rgba(0, 175, 195, 0.18) 0%, rgba(4, 104, 181, 0.06) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(0, 175, 195, 0.18) 0%, rgba(4, 104, 181, 0.06) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(0, 175, 195, 0.18) 0%, rgba(4, 104, 181, 0.06) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(0, 175, 195, 0.18) 0%, rgba(4, 104, 181, 0.06) 50%) top right / 50% 50% no-repeat;
+    padding: 30px 30px;
+}
+
 .area_text_tradicional {
     display: flex;
     flex-direction: column;
@@ -149,7 +158,7 @@ a {
     color: #2E3033;
     font-size: var(--font-size-title);
     font-weight: 700;
-    line-height: 135%;
+    line-height: 100%;
     /* 135% */
     letter-spacing: -1.6px;
 }
@@ -177,6 +186,7 @@ a {
     max-width: max-content;
     width: 100%;
     border-radius: 25px;
+    height: auto;
 }
 
 .box_1 {
@@ -285,7 +295,7 @@ a {
     line-height: normal;
 }
 
-.info_nosso_modelo p b { 
+.info_nosso_modelo p b {
     font-weight: 900;
 }
 
@@ -455,7 +465,7 @@ a {
     color: #2E3033;
     font-size: var(--font-size-title);
     font-weight: 700;
-    line-height: 135%; 
+    line-height: 135%;
     letter-spacing: -1.6px;
     text-align: center;
 }
@@ -620,7 +630,7 @@ a {
     color: #2E3033;
     font-size: var(--font-size-title);
     font-weight: 700;
-    line-height: 135%;
+    line-height: 100%;
     letter-spacing: -1.6px;
 }
 
@@ -644,7 +654,6 @@ a {
     width: 100%;
     height: 100%;
     z-index: 0 !important;
-    padding: 10px 0px 10px 0px !important;
 }
 
 .swiper .swiper-slide {
@@ -679,7 +688,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%;    
+    width: 100%;
     max-width: 300px;
 }
 
@@ -718,13 +727,12 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1200px;    
+    max-width: 1200px;
 }
 
 .area_processos {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
     width: 100%;
@@ -793,3 +801,182 @@ a {
 
 
 
+
+
+
+
+@media(max-width: 1024px) {
+    :root {
+        --font-size-title: 36px;
+    }
+
+    .area_home {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0px 20px;
+    }
+
+    .area_texts_home {
+        text-align: center;
+        align-items: center;
+    }
+
+    .title_home h2 {
+        font-size: 32px;
+        line-height: 110%;
+    }
+
+    .btn_home {
+        padding: 10px 12px 10px 12px;
+    }
+
+    /*Modelo tradicional*/
+    .container_modelo_tradicional {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .modelo_tradicional {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .btn_tradicional {
+        padding: 10px 12px 10px 12px;
+    }
+
+    .modelo_tradicional_2 {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .area_text_tradicional {
+        max-width: 545px;
+        gap: 20px;
+    }
+
+    /*Nosso modelo*/
+    .container_nosso_modelo {
+        padding: 0px 0px 40px 0px;
+    }
+
+    .area_proposta {
+        padding: 20px 0px 20px 0px;
+    }
+
+    .area_nosso_modelo {
+        padding: 0px 20px;
+    }
+
+    .circulo_proposta {
+        width: 100%;
+        max-width: 100px;
+        height: 100px;
+    }
+
+    .title_proposta h2 {
+        font-size: 20px;
+    }
+
+    .title_circulo h2 {
+        font-size: 13px;
+    }
+
+    .area_sets_proposta {
+        max-width: 310px;
+    }
+
+    .area_sets_proposta svg {
+        width: 30px;
+    }
+
+    .area_sets_proposta_2 {
+        max-width: 330px;
+    }
+
+    .area_sets_proposta_2 svg {
+        width: 50px;
+    }
+
+    .area_sets_proposta_3 {
+        max-width: 590px;
+    }
+
+    .area_sets_proposta_3 svg {
+        width: 50px;
+    }
+    /*Ecossistema*/
+    .container_ecossistema {
+        padding: 40px 0px 0px 0px;
+    }
+
+    .area_ecossistema {
+        gap: 10px;
+       
+    }
+
+    .area_texts_ecossistema {
+        padding: 0px 20px;
+        width: auto;
+    }
+
+
+    /*Agentes*/
+    .container_agentes {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .area_agentes_fundamentais {
+        flex-direction: column;
+        padding: 0px 20px;
+        width: auto;
+        gap: 20px;
+    }
+
+    .area_agentes_info {
+        text-align: center;
+    }
+
+    .agentes_info {
+        align-items: center;
+        gap: 15px;
+    }
+
+    .agentes_img {
+        max-width: 480px;
+        width: 100%;
+    }
+
+    /*Processos*/
+    .container_processos {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .area_processos {
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+
+    .btn_plataforma {
+        padding: 10px 12px 10px 12px;
+    }
+
+    .processos_img {
+        max-width: 480px;
+    }
+
+    .area_texts_processos {
+        max-width: 600px;
+    }
+
+}
+
+@media(max-width:480px) {
+    :root {
+        --font-size-title: 30px;
+        --font-size-sub-title: 14px;
+    }
+
+    .area_cards_swiper {
+        height: 240px;
+    }
+}
