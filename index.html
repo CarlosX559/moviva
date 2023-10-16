@@ -20,9 +20,76 @@
 
 <body>
 
+    <header>
+        <div class="menu_mobile">
+
+            <a href="#">
+                <img src="img/moviva_logo_home.svg" alt="">
+            </a>
+
+            <svg class="menu_open" width="64" height="30" viewBox="0 0 64 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="64" height="2" rx="1" fill="#0C4DA2" />
+                <rect y="14" width="42.9589" height="2" rx="1" fill="#0C4DA2" />
+                <rect y="28" width="56.9863" height="2" rx="1" fill="#0C4DA2" />
+            </svg>
+
+        </div>
 
 
-    <div class="container_home">
+        <div class="container_menu" id="container_menu">
+            <div class="container_menu_int">
+                <div class="area_menu">
+
+                    <svg class="close" width="33" height="32" viewBox="0 0 33 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.583984" y="30.4811" width="42.9589" height="2" rx="1"
+                            transform="rotate(-45 0.583984 30.4811)" fill="#0C4DA2" />
+                        <rect x="30.9604" y="31.8955" width="42.9589" height="2" rx="1"
+                            transform="rotate(-135 30.9604 31.8955)" fill="#0C4DA2" />
+                    </svg>
+
+
+                    <a href="#">
+                        <img class="logo_desktop" src="img/moviva_logo_home.svg" alt="">
+                    </a>
+
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#home">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#nosso_modelo">
+                                    Como funciona
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#ecossistema">
+                                    Ecossistema
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#custos">
+                                    Custos
+                                </a>
+                            </li>
+                            <!--<li>
+                                <a href="#">
+                                    Contato
+                                </a>
+                            </li>-->
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container_home" id="home">
         <div class="container_home_int">
             <div class="area_home">
 
@@ -152,7 +219,7 @@
     </div>
 
 
-    <div class="container_nosso_modelo">
+    <div class="container_nosso_modelo" id="nosso_modelo">
         <div class="container_nosso_modelo_int">
             <div class="area_nosso_modelo">
                 <div class="area_title_nosso_modelo">
@@ -453,7 +520,7 @@
     </section>
 
 
-    <div class="container_ecossistema">
+    <div class="container_ecossistema" id="ecossistema">
         <div class="container_ecossistema_int">
             <div class="area_ecossistema">
                 <div class="area_texts_ecossistema">
@@ -726,7 +793,7 @@
 
 
     <script src="js/swiper-bundle.min.js"></script>
-
+    <script src="js/script.js"></script>
 
     <script defer>
         const swiper = new Swiper('.swiper', {
