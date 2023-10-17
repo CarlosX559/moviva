@@ -16,6 +16,7 @@ html {
 body {
     margin: 0px;
     padding: 0px;
+    user-select: none;
 }
 
 h1,
@@ -37,14 +38,22 @@ a {
     z-index: 0;
 }
 
+.area_whatsapp a {
+    height: 68px;
+}
+
 .area_whatsapp img {
     width: 100%;
     max-width: 68px;
     height: 68px;
 }
 
-/*Menu*/
+.logo_desktop {
+    max-width: max-content;
+    width: 100%;
+}
 
+/*Menu*/
 
 header {
     width: 100%;
@@ -867,47 +876,227 @@ nav ul li a {
     height: auto;
 }
 
+/*Sindico*/
+.container_sindico {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 0px 60px 0px;
+}
+
+.container_sindico_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.area_sindico {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.info_sindico {
+    max-width: 740px;
+    width: 100%;
+}
+
+.info_sindico p {
+    color: #2E3135;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.info_sindico p b {
+    color: #0466B5;
+}
 
 
+.area_cards_sindico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.card_sindico {
+    width: 100%;
+    max-width: 440px;
+    height: 300px;
+    border-radius: 25px;
+    border: 1px solid #FFF;
+    background: linear-gradient(to bottom right, rgba(0, 175, 195, 0.18) 0%, rgba(4, 104, 181, 0.06) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(0, 175, 195, 0.18) 0%, rgba(4, 104, 181, 0.06) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(0, 175, 195, 0.18) 0%, rgba(4, 104, 181, 0.06) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(0, 175, 195, 0.18) 0%, rgba(4, 104, 181, 0.06) 50%) top right / 50% 50% no-repeat;
+    padding: 40px 35px 40px 35px;
+}
+
+.card_sindico_int {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.area_icon_sindico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    background: #C0E2FF;
+}
+
+.title_sindico h2 {
+    color: #2E3135;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 140%;
+}
+
+.sub_tittle_sindico p {
+    color: #2E3135;
+    font-size: var(--font-size-sub-title);
+    font-weight: 600;
+    line-height: 130%;
+}
 
 
+/*Custos*/
 
+.area_custos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    width: 100%;
+}
 
+.notebook {
+    max-width: max-content;
+    width: 100%;
+    position: relative;
+    left: 60px;
+    z-index: -1;
+}
 
+.area_texts_custos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 440px;
+}
 
+.title_custos h2 {
+    color: #2E3033;
+    font-size: var(--font-size-title);
+    font-weight: 700;
+    line-height: 70%;
+    letter-spacing: -1.6px;
+}
 
+.sub_title_custos p {
+    color: #2E3135;
+    font-size: var(--font-size-sub-title);
+    font-weight: 600;
+    line-height: 130%;
+}
 
+footer {
+    width: 100%;
+    background: #003C6B;
+    padding: 40px 0px 20px 0px;
+}
 
+.container_footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
+.container_footer_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
 
+.area_footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
+.area_logo_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 200px;
+}
 
+.moviva_logo_branco {
+    max-width: max-content;
+    width: 100%;
+}
 
+.info_logo_footer p {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+}
 
+.area_menu_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+}
 
+.infos_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: max-content;
+}
 
+.menu_footer p {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+}
 
+.copy p {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.copy p a {
+    text-decoration: none;
+    color: #FFF;
+}
 
 @media(max-width: 1024px) {
     :root {
         --font-size-title: 36px;
-    }
-
-
-    .logo_desktop {
-        display: none;
     }
 
     .area_menu {
@@ -1025,7 +1214,7 @@ nav ul li a {
         font-size: 30px;
     }
 
-    .area_menu nav ul a  {
+    .area_menu nav ul a {
         color: #2E3033;
         font-size: var(--font-size-title);
         font-weight: 700;
@@ -1177,6 +1366,15 @@ nav ul li a {
         width: 100%;
     }
 
+    /*Plataforma*/
+    .container_plataforma {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .title_plataforma h2 {
+        font-size: 28px;
+    }
+
     /*Processos*/
     .container_processos {
         padding: 40px 0px 40px 0px;
@@ -1199,6 +1397,61 @@ nav ul li a {
         max-width: 600px;
     }
 
+    .area_sindico {
+        padding: 0px 20px;
+
+    }
+
+    .area_cards_sindico {
+        flex-direction: column;
+    }
+
+    .area_custos {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .notebook {
+        left: 0px;
+        z-index: 0;
+        max-width: 650px;
+    }
+
+    .container_footer_int {
+        padding: 0px 20px;
+    }
+
+    .area_footer {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .infos_footer {
+        max-width: 210px;
+        width: 100%;
+    }
+
+    .area_logo_footer {
+        align-items: flex-start;
+        max-width: 210px;
+    }
+
+    .area_menu_footer {
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card_sindico {
+        padding: 30px 25px 30px 25px;
+    }
+
+    .info_sindico p {
+        font-size: 20px;
+    }
+
 }
 
 @media(max-width:480px) {
@@ -1211,9 +1464,68 @@ nav ul li a {
         height: 240px;
     }
 
+
+    .box_1 {
+        bottom: -10px;
+        left: -6px;
+        border-radius: 20px;
+        max-width: 150px;
+        height: 150px;
+    }
+
+    .box_2 {
+        top: -10px;
+        right: -6px;
+        border-radius: 20px;
+        max-width: 150px;
+        height: 150px;
+    }
+
+    .area_plataforma {
+        padding: 0px 20px;
+        gap: 20px;
+    }
+
+    .title_plataforma h2 {
+        font-size: 24px;
+    }
+
     .area_whatsapp img {
         width: 100%;
         max-width: 60px;
         height: 60px;
     }
+
+    .area_whatsapp a {
+        height: 60px;
+    }
+
+    .card_sindico {
+        padding: 25px 20px 25px 20px;
+        height: auto;
+        width: auto;
+    }
+
+    .info_sindico p {
+        font-size: 18px;
+    }
+
+    .title_sindico h2 {
+        font-size: 20px;
+    }
+
+    .area_footer {
+        align-items: flex-start;
+    }
+
+    .area_menu_footer {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .container_footer_int {
+        gap: 20px;
+    }
+
+
 }
