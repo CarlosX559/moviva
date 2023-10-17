@@ -269,6 +269,7 @@ nav ul li a {
 .bg_section_1 {
     max-width: max-content;
     width: 100%;
+    height: auto;
 }
 
 /*Modelo tradicional*/
@@ -684,12 +685,13 @@ nav ul li a {
 .agentes_img {
     max-width: max-content;
     width: 100%;
+    height: auto;
 }
 
 /*Plataforma*/
 
 #container_plataforma {
-    background-image: url(../img/bg_plataforma.png);
+    background-image: url(../img/bg_plataforma.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1057,6 +1059,7 @@ nav ul li a {
     position: relative;
     left: 60px;
     z-index: -1;
+    height: auto;
 }
 
 .area_texts_custos {
@@ -1122,6 +1125,7 @@ footer {
 .moviva_logo_branco {
     max-width: max-content;
     width: 100%;
+    height: auto;
 }
 
 .info_logo_footer p {
@@ -1135,7 +1139,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 900px;
+    max-width: 650px;
     width: 100%;
 }
 
@@ -1408,7 +1412,6 @@ footer {
         width: auto;
     }
 
-
     /*Agentes*/
     .container_agentes {
         padding: 40px 0px 40px 0px;
@@ -1513,12 +1516,20 @@ footer {
         gap: 20px;
     }
 
+    .container_sindico {
+        padding: 0px 0px 40px 0px;
+    }
+
     .card_sindico {
         padding: 30px 25px 30px 25px;
     }
 
     .info_sindico p {
         font-size: 20px;
+    }
+
+    footer {
+        padding: 40px 0px 50px 0px;
     }
 
 }
