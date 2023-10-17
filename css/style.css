@@ -16,7 +16,6 @@ html {
 body {
     margin: 0px;
     padding: 0px;
-    user-select: none;
 }
 
 h1,
@@ -182,12 +181,13 @@ nav ul li a {
 .btn_home {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
     border-radius: 6px;
     background: linear-gradient(87deg, #0462B4 0%, #04ADBF 100%);
-    width: 100%;
-    max-width: 170px;
     padding: 13px 15px 13px 15px;
+    transition: all ease-in-out 200ms;
+    transform: scale3d(1, 1, 1);
 }
 
 .btn_home h2 {
@@ -197,6 +197,35 @@ nav ul li a {
     text-transform: uppercase;
     line-height: 100%;
     margin-top: 4px;
+    text-rendering: optimizeLegibility;
+}
+
+.btn_scale {
+    transition: all ease-in-out 200ms;
+    transform: scale3d(1, 1, 1);
+}
+
+.btn_scale:hover {
+    transform: scale3d(1.06, 1.06, 1.06);
+}
+
+.btn_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: linear-gradient(87deg, #0462B4 0%, #04ADBF 100%);
+    padding: 13px 15px 13px 15px;
+}
+
+.btn_menu h2 {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin-top: 4px;
+    text-rendering: optimizeLegibility;
 }
 
 .bg_section_1 {
@@ -320,11 +349,10 @@ nav ul li a {
 .btn_tradicional {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
     border-radius: 6px;
     background: linear-gradient(90deg, #0462B4 0%, #04ADBF 100%);
-    width: 100%;
-    max-width: 170px;
     padding: 13px 15px 13px 15px;
 }
 
@@ -335,6 +363,7 @@ nav ul li a {
     text-transform: uppercase;
     line-height: 100%;
     margin-top: 4px;
+    text-rendering: optimizeLegibility;
 }
 
 
@@ -678,11 +707,10 @@ nav ul li a {
 .btn_plataforma {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
     border-radius: 6px;
     background: #04ADBF;
-    width: 100%;
-    max-width: 170px;
     padding: 13px 15px 13px 15px;
 }
 
@@ -693,6 +721,7 @@ nav ul li a {
     text-transform: uppercase;
     line-height: 100%;
     margin-top: 4px;
+    text-rendering: optimizeLegibility;
 }
 
 /*Ecossistema*/
