@@ -1295,13 +1295,6 @@ footer {
         letter-spacing: -1.6px;
     }
 
-    .area_menu nav ul a li:hover {
-        background: var(--degrade);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
     .area_home {
         flex-direction: column;
         gap: 40px;
