@@ -1116,13 +1116,14 @@ footer {
 .area_logo_footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
     width: 100%;
-    max-width: 200px;
+    max-width: 300px;
 }
 
 .moviva_logo_branco {
+    display: flex;
     max-width: max-content;
     width: 100%;
     height: auto;
@@ -1130,7 +1131,7 @@ footer {
 
 .info_logo_footer p {
     color: #FFF;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 100%;
 }
@@ -1500,7 +1501,6 @@ footer {
 
     .area_logo_footer {
         align-items: flex-start;
-        max-width: 210px;
     }
 
     .area_menu_footer {
